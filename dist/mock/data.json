@@ -18,8 +18,8 @@
         "isLike": false
     },
     {
-        "image": "/source/song_3.jpg",
-        "audio": "/source/song_3.mp3",
+        "image": "./source/song_3.jpg",
+        "audio": "./source/song_3.mp3",
         "song": "Shape of You",
         "album": "÷",
         "singer": "ed sheeran",
@@ -27,8 +27,8 @@
         "isLike": false
     },
     {
-        "image": "/source/song_4.jpg",
-        "audio": "/source/song_4.mp3",
+        "image": "./source/song_4.jpg",
+        "audio": "./source/song_4.mp3",
         "song": "丑八怪",
         "album": "意外",
         "singer": "薛之谦",
@@ -36,8 +36,8 @@
         "isLike": false
     },
     {
-        "image": "/source/song_5.jpg",
-        "audio": "/source/song_5.mp3",
+        "image": "./source/song_5.jpg",
+        "audio": "./source/song_5.mp3",
         "song": "Five Hundred Miles",
         "album": "Origin Soundtrack Recording",
         "singer": "Justin Timberlake",
@@ -45,8 +45,8 @@
         "isLike": false
     },
     {
-        "image": "/source/song_6.jpg",
-        "audio": "/source/song_6.mp3",
+        "image": "./source/song_6.jpg",
+        "audio": "./source/song_6.mp3",
         "song": "借我",
         "album": "算云烟",
         "singer": "谢春花",
@@ -54,8 +54,8 @@
         "isLike": false
     },
     {
-        "image": "/source/song_7.jpg",
-        "audio": "/source/song_7.mp3",
+        "image": "./source/song_7.jpg",
+        "audio": "./source/song_7.mp3",
         "song": "可乐",
         "album": "可乐",
         "singer": "赵紫骅",
@@ -63,8 +63,8 @@
         "isLike": false
     },
     {
-        "image": "/source/song_8.jpg",
-        "audio": "/source/song_8.mp3",
+        "image": "./source/song_8.jpg",
+        "audio": "./source/song_8.mp3",
         "song": "See You Again",
         "album": "Furious 7",
         "singer": "Wiz Khalifa/Charlie Puth",
@@ -72,8 +72,8 @@
         "isLike": false
     },
     {
-        "image": "/source/song_9.jpg",
-        "audio": "/source/song_9.mp3",
+        "image": "./source/song_9.jpg",
+        "audio": "./source/song_9.mp3",
         "song": "Something Just Like This",
         "album": "Something Just Like This",
         "singer": "The Chainsmokers/Coldplay",
@@ -81,8 +81,8 @@
         "isLike": false
     },
     {
-        "image": "/source/song_10.jpg",
-        "audio": "/source/song_10.mp3",
+        "image": "./source/song_10.jpg",
+        "audio": "./source/song_10.mp3",
         "song": "童话镇",
         "album": "童话镇",
         "singer": "陈一发儿",
@@ -90,8 +90,8 @@
         "isLike": false
     },
     {
-        "image": "/source/song_11.jpg",
-        "audio": "/source/song_11.mp3",
+        "image": "./source/song_11.jpg",
+        "audio": "./source/song_11.mp3",
         "song": "信仰",
         "album": "信仰",
         "singer": "张信哲",
