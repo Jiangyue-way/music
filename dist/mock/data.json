@@ -1,0 +1,102 @@
+[
+    {
+        "image": "/source/song_1.jpg",
+        "audio": "/source/song_1.mp3",
+        "song": "成都",
+        "album": "不想长大",
+        "singer": "赵雷",
+        "duration": 328,
+        "isLike": true
+    },
+    {
+        "image": "/source/song_2.jpg",
+        "audio": "/source/song_2.mp3",
+        "song": "小半",
+        "album": "小梦大半",
+        "singer": "陈粒",
+        "duration": 297,
+        "isLike": false
+    },
+    {
+        "image": "/source/song_3.jpg",
+        "audio": "/source/song_3.mp3",
+        "song": "Shape of You",
+        "album": "÷",
+        "singer": "ed sheeran",
+        "duration": 235,
+        "isLike": false
+    },
+    {
+        "image": "/source/song_4.jpg",
+        "audio": "/source/song_4.mp3",
+        "song": "丑八怪",
+        "album": "意外",
+        "singer": "薛之谦",
+        "duration": 253,
+        "isLike": false
+    },
+    {
+        "image": "/source/song_5.jpg",
+        "audio": "/source/song_5.mp3",
+        "song": "Five Hundred Miles",
+        "album": "Origin Soundtrack Recording",
+        "singer": "Justin Timberlake",
+        "duration": 207,
+        "isLike": false
+    },
+    {
+        "image": "/source/song_6.jpg",
+        "audio": "/source/song_6.mp3",
+        "song": "借我",
+        "album": "算云烟",
+        "singer": "谢春花",
+        "duration": 257,
+        "isLike": false
+    },
+    {
+        "image": "/source/song_7.jpg",
+        "audio": "/source/song_7.mp3",
+        "song": "可乐",
+        "album": "可乐",
+        "singer": "赵紫骅",
+        "duration": 345,
+        "isLike": false
+    },
+    {
+        "image": "/source/song_8.jpg",
+        "audio": "/source/song_8.mp3",
+        "song": "See You Again",
+        "album": "Furious 7",
+        "singer": "Wiz Khalifa/Charlie Puth",
+        "duration": 228,
+        "isLike": false
+    },
+    {
+        "image": "/source/song_9.jpg",
+        "audio": "/source/song_9.mp3",
+        "song": "Something Just Like This",
+        "album": "Something Just Like This",
+        "singer": "The Chainsmokers/Coldplay",
+        "duration": 247,
+        "isLike": false
+    },
+    {
+        "image": "/source/song_10.jpg",
+        "audio": "/source/song_10.mp3",
+        "song": "童话镇",
+        "album": "童话镇",
+        "singer": "陈一发儿",
+        "duration": 258,
+        "isLike": false
+    },
+    {
+        "image": "/source/song_11.jpg",
+        "audio": "/source/song_11.mp3",
+        "song": "信仰",
+        "album": "信仰",
+        "singer": "张信哲",
+        "duration": 255,
+        "isLike": false
+    }
+
+]

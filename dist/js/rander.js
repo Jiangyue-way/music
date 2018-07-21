@@ -1,0 +1,1 @@
+!function(n,i){var a,d;a=data[0],d='<div class="song-name">'+a.song+'</div><div class="singer-name">'+a.singer+'</div><div class="album-name">'+infeo.album+"</div>",o.find(".song-info").html(d);var o=n(document.body)}(window.Zepto,window.player);
