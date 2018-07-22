@@ -5,6 +5,7 @@
         frameId,
         lastPer = 0,
         startTime;
+    
     //处理时间
     function formatTime (duration) {
         duration = Math.round(duration);
@@ -46,8 +47,13 @@
         function frame () {
             var curTime = new Date().getTime();
             var percent = lastPer + (curTime - startTime) / (curDuration * 1000);
-            frameId = requestAnimationFrame(frame);
-            update(percent);
+            if(percent < 1){
+                frameId = requestAnimationFrame(frame);
+                update(percent);
+            }else{
+                cancelAnimationFrame(frameId);
+                $scope.find(".next-btn").trigger("click");
+            }
         }
         frame()
     }
@@ -57,7 +63,6 @@
         lastPer = lastPer + (stopTime - startTime) / (curDuration * 1000);
         cancelAnimationFrame(frameId);
     }
-
     root.process = {
         renderAllTime: renderAllTime,
         start: start,

@@ -14,7 +14,7 @@
             root.blurImg(image, $scope);
             $scope.find(".song-img img").attr("src", src);
         }
-        
+        image.src = src;
     }
     function renderIsLike (isLike) {
         if(isLike){
@@ -23,7 +23,6 @@
             $scope.find(".like-btn").removeClass("liking");
         }
     }
-
 
     root.render = function(da) {
         renderInfo(da);

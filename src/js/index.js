@@ -9,6 +9,19 @@ var songList;
 var audio = new root.audioControl();
 
 function bindEvent () {
+    $scope.on("play:change", function (event, index) {
+        audio.getAudio(songList[index].audio);
+        root.process.renderAllTime(songList[index].duration);
+        root.render(songList[index]);
+        root.process.update(0);
+     
+        if(audio.status == "play"){
+            audio.play();
+            root.process.start();
+        }
+        
+        
+    })
     $scope.on("click", ".prev-btn", function(){
         // if(index === 0){
         //     index = songList.length - 1;
@@ -18,22 +31,16 @@ function bindEvent () {
         //引用模块来获得index
         var index = controlManger.prev();
         $scope.trigger("play:change", index);
+        console.log('prev')
     })
     $scope.on("click", ".next-btn", function () {
         var index = controlManger.next();
         $scope.trigger("play:change", index);
+        console.log('next')
     })
-    $scope.on("play:change", function (event, index) {
-        audio.getAudio(songList[index].audio);
-        if(audio.status == "play"){
-            audio.play();
-            root.process.start();
-        }
-        root.process.renderAllTime(songList[index].duration);
-        root.render(songList[index]);
-        root.process.update(0);
-    })
+    
     $scope.on("click", ".play-btn", function () {
+        console.log('paly');
         if(audio.status == "play"){
             audio.pause();
             root.process.stop();
@@ -53,6 +60,13 @@ function bindEvent () {
             songList[controlManger.index].isLike = false;
             $scope.find(".like-btn").removeClass("liking");
         }
+        console.log('like')
+        console.log(audio)
+        console.log(audio.getCurTime())
+    })
+    $scope.on("click",".list-btn", function() {
+        console.log('list');
+        root.playList.show(controlManger);
     })
 }
 function bindTouch () {
@@ -66,6 +80,9 @@ function bindTouch () {
         //percent --> uptate
         var x = e.changedTouches[0].clientX;
         var per = (x - left) / width;
+        if(per > 1 || per < 0){
+            per = 0;
+        }
         root.process.update(per);
     }).on("touchend", function (e) {
         var x = e.changedTouches[0].clientX;
@@ -92,6 +109,7 @@ function getData(url) {
             controlManger = new root.controlManger(data.length);
             $scope.trigger("play:change", 0);
             bindTouch();
+            root.playList.renderList(data);
             console.log(data);
         },
         error: function (){
